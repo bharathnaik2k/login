@@ -115,7 +115,7 @@ class SignUpPage extends StatelessWidget {
                     child: TextField(
                       inputFormatters: [LengthLimitingTextInputFormatter(10)],
                       decoration: const InputDecoration(
-                          hintText: "Mobile Number", border: InputBorder.none),
+                          hintText: "Number", border: InputBorder.none),
                       keyboardType: TextInputType.number,
                     ),
                   ),
