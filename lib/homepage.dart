@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_6/forgetpage.dart';
+import 'package:flutter_application_6/loginpage.dart';
 import 'package:flutter_application_6/signuppage.dart';
 
 class HomePage extends StatelessWidget {
@@ -57,7 +58,7 @@ class HomePage extends StatelessWidget {
                   color: Colors.blueGrey,
                 ),
                 decoration: InputDecoration(
-                  hintText: "Username",
+                  hintText: "Username (Email)",
                   hintStyle: const TextStyle(
                     color: Colors.black,
                   ),
@@ -96,7 +97,12 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 18),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return const LoginPage();
+                  }));
+                },
                 child: Container(
                   height: 40,
                   width: 160,
